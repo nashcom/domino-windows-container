@@ -1,0 +1,1 @@
+docker run -it -d --rm --name nginx -p 8888:80 -v c:/ContainerData/software:c:/html nginx
