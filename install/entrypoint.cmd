@@ -1,11 +1,10 @@
 @echo off
-echo Domino Container Entrypoint for Windows 0.2.0
+echo Domino Container Entrypoint for Windows 0.3.0
 echo ---------------------------------------------
 echo:
 
 set DOMINO_DATA_PATH=c:\local\notesdata
-set DOMINO_AUTO_CONFIG_JSON_FILE=%DOMINO_DATA_PATH%\DominoAutoConfig.json
-set SetupAutoConfigureParams=c:\setup.json
+set DOMINO_AUTO_CONFIG_JSON_FILE=c:\setup\DominoAutoConfig.json
 
 if not exist "%DOMINO_DATA_PATH%\notes.ini" (
   echo Extracting data directory
@@ -38,4 +37,4 @@ if exist "%DOMINO_DATA_PATH%\names.nsf" (
   )
 )
 
-pause 
+waitfor ever

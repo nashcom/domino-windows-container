@@ -42,6 +42,8 @@
       "SSL_DISABLE_EXTENDED_MASTER_SECRET": "1",
       "Server_MinPossibleTransTime": "1500",
       "Server_MaxPossibleTransTime": "20000000",
+      "SERVER_UPGRADE_NO_DIRECTORY_UPGRADE_PROMPT": "1",
+      "SERVER_RESTART_DELAY": "1",
       "NSF_BUFFER_POOL_SIZE_MB": "256",
       "FT_FLY_INDEX_OFF": "1",
       "UPDATE_FULLTEXT_THREAD": "1",

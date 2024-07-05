@@ -1,4 +1,5 @@
-FROM mcr.microsoft.com/windows/servercore:ltsc2022
+ARG BASE_IMAGE=mcr.microsoft.com/windows/servercore:ltsc2019
+FROM $BASE_IMAGE
 
 ARG DOWNLOAD_NGINX_URL=
 COPY install.ps1 /

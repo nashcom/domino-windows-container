@@ -1,4 +1,6 @@
-FROM mcr.microsoft.com/windows/servercore:ltsc2022
+
+ARG BASE_IMAGE=mcr.microsoft.com/windows/servercore:ltsc2022
+FROM $BASE_IMAGE
 
 ARG DOWNLOAD_7ZIP_URL=
 ARG DOWNLOAD_FROM=

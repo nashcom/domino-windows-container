@@ -57,7 +57,7 @@ Start-Process -FilePath "c:\temp\Disk1\InstData\install.exe" -WorkingDirectory "
 
 header "Moving install data to c:\notesdata.7z"
 
-Move-Item C:\Domino\notes.ini c:\local\notesdata
+# Not needed for Domino 14 Move-Item C:\Domino\notes.ini c:\local\notesdata
 Start-Process -FilePath "c:\Program Files\7-Zip\7z.exe" -ArgumentList "a -y c:\notesdata.7z c:\local\notesdata" -Wait -NoNewWindow
 Write-Host
 Remove-Item "c:\local\notesdata" -Recurse
